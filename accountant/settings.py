@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import environ
 import os
-from decouple import config
+# from decouple import config
 
 env = environ.Env()
 
@@ -241,10 +241,10 @@ SUMMERNOTE_THEME = 'bs3'  # Show summernote with Bootstrap4
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-# Email sending configurations
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config("EMAIL_ADDRESS")
-EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
+# # Email sending configurations
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = config("EMAIL_ADDRESS")
+# EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
