@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import environ
 import os
-# from decouple import config
 
 env = environ.Env()
 
@@ -239,8 +238,6 @@ SECURE_SSL_REDIRECT = True
 
 SUMMERNOTE_THEME = 'bs3'  # Show summernote with Bootstrap4
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
-
 
 # Email sending configurations
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
