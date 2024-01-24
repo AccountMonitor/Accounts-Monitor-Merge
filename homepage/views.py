@@ -5,6 +5,10 @@ from clients.models import Newsletter, Contact_us_Message
 from blog.models import Blog
 
 # Create your views here.
+
+def landingpage(request):
+    return render(request, 'landing.html')
+
 def homepage(request):
     infos = Company.objects.order_by('id')[:1]
     contacts_infos = Contact_us.objects.order_by('id')[:1]
