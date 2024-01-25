@@ -1653,7 +1653,7 @@
           <a href="#pricing" class="v0-menuItem" rel="prefetch"><b>Pricing</b></a>
           <a href="#softwareBlog" class="v0-menuItem" rel="prefetch"><b>Blog</b></a>
           <a href="#about" class="v0-menuItem" rel="prefetch"><b>About</b></a>
-          <a href="{% url 'contact' %}" class="v0-menuItem" rel="prefetch"><b>Contact</b></a>
+          <a href="#contact" class="v0-menuItem" rel="prefetch"><b>Contact</b></a>
         </div>
         <div class="hidden xl:flex flex-row justify-end text-[13px] gap-1 md:gap-2">
           <a href="{%url 'customer_invoice' %}" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold text-orange hover:text-orange-light font-semibold" id="connect-login-button">Login</a>
@@ -4652,7 +4652,7 @@
       </section>
     </main>
 
-    <footer class="bg-blue-medium text-white font-open-sans">
+    <footer class="bg-blue-medium text-white font-open-sans" id="footer">
       <div class="max-w-[1440px] mx-auto px-[20px] md:px-[50px] xl:px-[100px] pt-[65px]">
         <div class="flex lg:hidden flex-col items-center gap-8 mb-12">
           <a href="https://accountsmonitor.co.ke/"><svg viewBox="0 0 960 267.84" id="svg21" version="1.1" class="h-9" width="130" height="36" aria-label="Go to home page">
@@ -4671,8 +4671,8 @@
                   <a href="#pricing">Pricing</a>
                   <a href="{{ request.build_absolute_uri }}"><br></a>
                   <a href="#blogSoftware">Blogs</a>
-                  <a href="https://accountsmonitor.co.ke/faq/">FAQ</a>
-                  <a href="{% url 'contact' %}">Contact Us</a>
+                  <a href="https://accountsmonitor.co.ke">FAQ</a>
+                  <a href="#contact">Contact Us</a>
                 </div>
               </div>
             </div>
