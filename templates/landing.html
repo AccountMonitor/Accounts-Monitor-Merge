@@ -1649,7 +1649,7 @@
           <img src="{% static 'assets/img/logo.png' %}">
         </a>
         <div class="hidden xl:flex gap-8 text-[14px] tracking-[0.5px] [&amp;&gt;a]:p-3 [&amp;&gt;a]:transition-colors [&amp;&gt;a:hover]:text-grey items-center">
-          <a href="{% url 'about' %} #about" class="v0-menuItem" rel="prefetch"><b>Services</b></a>
+          <a href="#about" class="v0-menuItem" rel="prefetch"><b>Services</b></a>
           <a href="#pricing" class="v0-menuItem" rel="prefetch"><b>Pricing</b></a>
           <a href="#softwareBlog" class="v0-menuItem" rel="prefetch"><b>Blog</b></a>
           <a href="#about" class="v0-menuItem" rel="prefetch"><b>About</b></a>
@@ -1888,12 +1888,17 @@
                 </svg>
               </div>
               <div class="self-center grid grid-cols-[1fr,1fr] gap-10 text-center text-blue my-auto font-lyon text-[30px] md:text-[40px] [&amp;&gt;a]:transition-colors [&amp;&gt;a:hover]:text-grey">
-                <a href="https://arcticworldarchive.org/">Home</a><a href="https://arcticworldarchive.org/about/" rel="prefetch">About</a><a href="https://arcticworldarchive.org/service/" rel="prefetch">Service</a><a href="https://arcticworldarchive.org/pricing/" rel="prefetch">Pricing</a><a href="https://arcticworldarchive.org/collection/" rel="prefetch">Collection <sup class="text-orange">97</sup></a><a href="https://arcticworldarchive.org/blog/" rel="prefetch">Blog</a><a href="https://arcticworldarchive.org/faq/" rel="prefetch">FAQ</a><a href="https://arcticworldarchive.org/contact/" rel="prefetch">Contact</a>
+                <a href="{{ request.build_absolute_uri }}">Home</a>
+                <a href="#about" rel="prefetch">About</a>
+                <a href="#about" rel="prefetch">Service</a>
+                <a href="#pricing" rel="prefetch">Pricing</a>
+                <a href="#" rel="prefetch">My account <sup class="text-orange">97</sup></a>
+                <a href="blogSoftware" rel="prefetch">Blog</a>
+                <a href="#about" rel="prefetch">FAQ</a>
+                <a href="{%url 'contact' %}" rel="prefetch">Contact</a>
                 <div class="font-open-sans col-span-2 grid items-center text-[13px] md:text-[18px] gap-4 text-center">
-                  <a class="bg-orange hover:bg-orange-light transition-colors rounded-xl px-4 py-2" href="https://connect.arcticworldarchive.org/login">
-                    Log in </a><a class="bg-orange hover:bg-orange-light transition-colors rounded-xl px-4 py-2" href="https://connect.arcticworldarchive.org/signup">
-                    Get Started
-                  </a>
+                  <a class="bg-orange hover:bg-orange-light transition-colors rounded-xl px-4 py-2" href="{%url 'customer_invoice' %}">Log in </a>
+                  <a class="bg-orange hover:bg-orange-light transition-colors rounded-xl px-4 py-2" href="{%url 'customer_invoice' %}">Get Started</a>
                 </div>
               </div>
             </div>
@@ -2031,11 +2036,12 @@
                     represents a significant milestone in a company's path.
                   </p>
                   <div class="mt-10 sm:my-10 flex items-left justify-left gap-x-6 font-open-sans">
-                    <a href="https://connect.arcticworldarchive.org/signup" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold bg-orange-dark hover:bg-orange hover:text-black text-black rounded-xl">Start free trial</a><a href="https://arcticworldarchive.org/service/" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold border-orange-dark border-[1px] rounded-3xl hover:text-orange-light hover:border-orange-light text-sm">Subscribe to Premium</a>
+                    <a href="{%url 'sales_rep' %}" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold bg-orange-dark hover:bg-orange hover:text-black text-black rounded-xl">Start free trial</a>
+                    <a href="{%url 'sales_rep' %}" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold border-orange-dark border-[1px] rounded-3xl hover:text-orange-light hover:border-orange-light text-sm">Subscribe to Premium</a>
                   </div>
                 </div>
                 <div class="lg:mt-0 lg:ml-auto w-full h-full">
-                  <img src="./The Future of Data Preservation - AWA_files/AWA-Crew8581.69987df3_tzjYK.webp" alt="Secure data storage facility interior." class="object-cover w-full rounded-xl h-full" loading="eager" decoding="sync" fetchpriority="high" width="800" height="533">
+                  <img src="{% static 'assets/img/AWA-Crew8581.69987df3_tzjYK.webp' %}" alt="Secure data storage facility interior." class="object-cover w-full rounded-xl h-full" loading="eager" decoding="sync" fetchpriority="high" width="800" height="533">
                 </div>
               </div>
             </div>
