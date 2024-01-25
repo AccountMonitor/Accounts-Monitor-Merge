@@ -1678,15 +1678,20 @@
     ></noscript>
     <nav class="max-w-[1440px] mx-auto px-[20px] md:px-[50px] xl:px-[100px] max-h-[100px] relative z-50">
       <div class="grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] text-white mt-[50px] justify-between items-center font-open-sans">
-        <a href="https://arcticworldarchive.org/" aria-label="Go to home page" title="Go to home page">
-          <img src="./The Future of Data Preservation - AWA_files/logo.png">
+        <a href="{{ request.build_absolute_uri }}" aria-label="Go to home page" title="Go to home page">
+          <img src="{% static "assets/img/logo.png" %}">
         </a>
         <div class="hidden xl:flex gap-8 text-[14px] tracking-[0.5px] [&amp;&gt;a]:p-3 [&amp;&gt;a]:transition-colors [&amp;&gt;a:hover]:text-grey items-center">
-          <a href="https://arcticworldarchive.org/service/" class="v0-menuItem" rel="prefetch"><b>Services</b></a><a href="https://arcticworldarchive.org/pricing/" class="v0-menuItem" rel="prefetch"><b>Pricing</b></a><a href="https://arcticworldarchive.org/blog/" class="v0-menuItem" rel="prefetch"><b>Blog</b></a><a href="https://arcticworldarchive.org/about/" class="v0-menuItem" rel="prefetch"><b>About</b></a><a href="https://arcticworldarchive.org/contact/" class="v0-menuItem" rel="prefetch"><b>Contact</b></a>
+          <a href="{% url "about" %} " class="v0-menuItem" rel="prefetch"><b>Services</b></a>
+          <a href="#pricing" class="v0-menuItem" rel="prefetch"><b>Pricing</b></a>
+          <a href="#softwareBlog" class="v0-menuItem" rel="prefetch"><b>Blog</b></a>
+          <a href="#about" class="v0-menuItem" rel="prefetch"><b>About</b></a>
+          <a href="{% url 'contact' %}" class="v0-menuItem" rel="prefetch"><b>Contact</b></a>
         </div>
         <div class="hidden xl:flex flex-row justify-end text-[13px] gap-1 md:gap-2">
-          <a href="https://connect.arcticworldarchive.org/login" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold text-orange hover:text-orange-light font-semibold" id="connect-login-button">Login</a><a href="https://connect.arcticworldarchive.org/signup" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold bg-orange-dark hover:bg-orange hover:text-black text-black rounded-xl font-semibold" id="connect-signup-button">
-            Sign Up
+          <a href="{%url 'customer_invoice' %}" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold text-orange hover:text-orange-light font-semibold" id="connect-login-button">Login</a>
+          <a href="{%url 'sales_rep' %}" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold bg-orange-dark hover:bg-orange hover:text-black text-black rounded-xl font-semibold" id="connect-signup-button">
+            Create Account
           </a>
         </div>
         <script>
@@ -2070,7 +2075,11 @@
           </section>
         </div>
       </header>
-      <section class="mx-auto max-w-[1440px] px-[20px] md:px-[50px] xl:px-[100px] py-[50px]">
+
+
+
+
+      <section class="mx-auto max-w-[1440px] px-[20px] md:px-[50px] xl:px-[100px] py-[50px]" id="about">
         <h1 class="text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] leading-[36px] md:leading-[45px] lg:leading-[55px] xl:leading-[64px] mb-10 max-w-[20ch] text-left mb-2" style="--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; font-size: 50px; max-width: 20ch; line-height: 55px;"><span style="--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; font-weight: bolder;">Who We Are</span></h1><div><span style="background-color: rgb(30 31 46 / var(--tw-bg-opacity)); font-size: 35px;"><font face="LyonDisplay, serif">We are more than just numbers and ledgers; we are your dedicated financial allies. As a team of seasoned </font></span><a href="https://arcticworldarchive.org/about/" class="text-orange hover:underline-offset-4 hover:underline" style="--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; text-decoration-line: underline; --tw-text-opacity: 1; text-underline-offset: 4px; font-weight: inherit; font-family: LyonDisplay, serif; font-size: 35px; background-color: rgb(30 31 46 / var(--tw-bg-opacity));">our team</a>&nbsp;&nbsp;<span style="font-family: LyonDisplay, serif; background-color: rgb(30 31 46 / var(--tw-bg-opacity)); font-size: 35px; color: rgb(235 230 226 / var(--tw-text-opacity));">professionals, our mission is to redefine your experience with financial services.&nbsp;</span></div><div><span style="font-family: LyonDisplay, serif; background-color: rgb(30 31 46 / var(--tw-bg-opacity)); font-size: 35px; color: rgb(235 230 226 / var(--tw-text-opacity));"><br></span></div><div><span style="font-family: LyonDisplay, serif; background-color: rgb(30 31 46 / var(--tw-bg-opacity)); font-size: 35px; color: rgb(235 230 226 / var(--tw-text-opacity));">Rooted in expertise, commitment and driven by innovation, we bring a fresh perspective to the world of accounting.</span></div><div><span style="
               --tw-border-spacing-x: 0;
               --tw-border-spacing-y: 0;
@@ -2331,7 +2340,9 @@
         </div>
         <a href="https://arcticworldarchive.org/collection/" class="text-center px-[22px] py-[10px] min-w-[114px] w-max transition-colors font-semibold border-orange-dark border-[1px] rounded-3xl hover:text-orange-light hover:border-orange-light">Explore&nbsp;</a>
       </section>
-      <section class="mx-auto max-w-[1440px] px-[20px] md:px-0 xl:px-0 py-[200px]">
+
+
+      <section class="mx-auto max-w-[1440px] px-[20px] md:px-0 xl:px-0 py-[200px]" id="pricing">
         <div class="max-w-[1440px] px-[20px] md:px-[50px] xl:px-[100px] mx-auto flex flex-col md:flex-row items-center gap-16">
           <div class="max-w-[560px] mx-auto flex flex-col items-center md:items-start -order-1 md:order-1">
             <h1 class="text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] leading-[36px] md:leading-[45px] lg:leading-[55px] xl:leading-[64px] mb-10 max-w-[20ch] text-left mb-2" style="
@@ -2405,7 +2416,6 @@
                 <ul class="font-open-sans text-[16px] mt-2 mb-4 px-12 pr-8" style="
                     list-style-image: url(&#39;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTYiIGhlaWdodD0iMTYiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgaWQ9Im9yaWdpbmFsLWljb24iIGZpbGw9IiNlZWFiODgiPjxwYXRoIGQ9Ik02NC41LDEzOS4wMzMzM2wtNDAuODUsLTQwLjg1bDEwLjAzMzMzLC0xMC4wMzMzM2wzMC44MTY2NywzMC44MTY2N2w4MC45ODMzMywtODAuOTgzMzNsMTAuMDMzMzMsMTAuMDMzMzN6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=&#39;);
                   ">
-                  <li>
                     <h3 class="text-[35px]" style="
                         --tw-border-spacing-x: 0;
                         --tw-border-spacing-y: 0;
@@ -3673,6 +3683,9 @@
             </div></astro-island>
         </div>
       </section>
+
+
+
       <section class="font-open-sans max-w-[1440px] mx-auto pt-[110px] grid grid-cols-[repeat(64,1fr)] grid-rows-[repeat(61,24px)]">
         <!-- <Image
                 src={mapWhite}
@@ -4773,7 +4786,11 @@
           </div>
         </div>
       </section>
-      <section class="mt-[100px] max-w-[1440px] mx-auto px-[20px] md:px-[50px] xl:px-[100px]">
+
+
+
+
+      <section class="mt-[100px] max-w-[1440px] mx-auto px-[20px] md:px-[50px] xl:px-[100px]" id="softwareBlog">
         <div class="col-span-full">
           <a href="https://arcticworldarchive.org/collection/" class="hover:text-gray-300 transition-colors"><h2 class="text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] leading-[36px] md:leading-[45px] lg:leading-[55px] xl:leading-[64px] mb-2">A Guide On How to Use Our Software&nbsp;</h2><div><br></div></a>
           <p class="text-[16px] md:text-[17px] lg:text-[17px] xl:text-[18px] leading-[21px] md:leading-[24px] lg:leading-[26px] xl:leading-[29px] font-open-sans max-w-[640px] mb-2"><font color="#d1d5db" face="Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"><span style="font-size: 16px; white-space-collapse: preserve;">Our blog isn't just a space for information; it's a classroom where you can learn to leverage our services for your business's success. Join us on this exciting educational journey, and let's navigate the seas of finance together.</span></font><br></p>
@@ -4795,7 +4812,7 @@
                       vertical-align: middle;
                       max-width: 100%;
                       height: auto;
-                    "><span style="white-space:pre">		</span><span style="font-family: LyonDisplay, serif; font-size: 19px; background-color: rgb(235 230 226 / var(--tw-bg-opacity)); color: rgb(11 16 51 / var(--tw-text-opacity));">January 1, 2019</span></picture></div></a><div class="px-[30px] xl:px-[40px] pt-4 pb-[28px] grid grid-rows-[auto,auto,auto,1fr] gap-0 font-open-sans max-w">
+                    "><span style="white-space:pre">		</span><span style="font-family: LyonDisplay, serif; font-size: 19px; background-color: rgb(235 230 226 / var(--tw-bg-opacity)); color: rgb(11 16 51 / var(--tw-text-opacity));">January 1, 2024</span></picture></div></a><div class="px-[30px] xl:px-[40px] pt-4 pb-[28px] grid grid-rows-[auto,auto,auto,1fr] gap-0 font-open-sans max-w">
               <h2 class="text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] leading-[27px] md:leading-[34px] lg:leading-[40px] xl:leading-[47px] font-lyon my-4 mb-2">Creating an account in Accounts Monitor</h2>
               <p class="text-[16px] md:text-[17px] lg:text-[17px] xl:text-[18px] leading-[21px] md:leading-[24px] lg:leading-[26px] xl:leading-[29px] mb-[22px] mb-2">
                 First you need to have a computer or a smartphone with good internet access. The second step is to ensure...</p>
